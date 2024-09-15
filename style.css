@@ -1,0 +1,274 @@
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  --Para-font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: Hanken Grotesk, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Pale-blue);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--White);
+  padding: 20px;
+  border-radius: 20px;
+  width: 600px;
+}
+
+.leftPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 55%;
+  height: 450px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue),
+    var(--Light-royal-blue)
+  );
+  padding: 5px;
+}
+
+.u-result {
+  color: var(--Pale-blue);
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.circle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle::before {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--Violet-blue),
+    var(--Persian-blue)
+  );
+  margin: 0 auto;
+  margin: 25px 0;
+}
+
+.circle h3 {
+  position: absolute;
+  top: 60px;
+  font-weight: 800;
+  color: var(--White);
+  font-size: 60px;
+}
+
+.circle span {
+  position: absolute;
+  top: 135px;
+  color: var(--Light-lavender);
+  font-size: var(--Para-font-size);
+  font-weight: 500;
+}
+
+.great {
+  color: var(--White);
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.descScore {
+  color: var(--Light-lavender);
+  font-size: var(--Para-font-size);
+  font-weight: 400;
+  text-align: center;
+}
+
+.rightPart {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 45%;
+  flex: 1;
+}
+
+.summaryHeading {
+  color: var(--Dark-gray-blue);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.common {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.common div {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.reaction {
+  background-color: hsl(0, 100%, 67%, 0.2);
+}
+
+.memory {
+  background-color: hsl(39, 100%, 56%, 0.2);
+}
+
+.verbal {
+  background-color: hsl(166, 100%, 37%, 0.2);
+}
+
+.visual {
+  background-color: hsl(228, 45%, 44%, 0.2);
+}
+
+.reacTxt {
+  color: var(--Light-red);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memoTxt {
+  color: var(--Orangey-yellow);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.verbTxt {
+  color: var(--Green-teal);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.visuTxt {
+  color: var(--Violet-blue);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--Dark-gray-blue);
+}
+
+span {
+  color: hsl(228, 45%, 44%, 0.7);
+  font-weight: 700;
+}
+
+.contBtn {
+  width: 95%;
+  padding: 10px;
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  margin: 0 auto;
+  margin: 15px 0;
+  transition: all 0.18s linear;
+}
+.contBtn:hover {
+  background-color: var(--Violet-blue);
+}
+
+.attribution {
+  margin: 30px 0;
+}
+
+.b .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .leftPart {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .rightPart {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .attribution {
+    text-align: center;
+    margin: 20px auto;
+  }
+}
